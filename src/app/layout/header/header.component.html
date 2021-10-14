@@ -1,0 +1,60 @@
+<div>
+  <div class="toolbar" role="banner">
+    <a href="#home" class="w3-bar-item" title="Top Geradores - Venda e Manutenção de Geradores">
+      <img
+        alt="Logotipo"
+        src="https://res.cloudinary.com/wmbp2016/image/upload/v1633822794/topgeradores/logotipo.png"
+        height="40"
+      />
+    </a>
+
+      <div class="spacer"></div>
+
+      <div class="w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-btn" title="Sobre a Empresa">
+                <mat-icon>engineering</mat-icon>
+                INSTITUCIONAL
+              </a>
+
+              <a href="#catalog" class="w3-bar-item w3-btn" title="Catálogo">
+                <mat-icon>menu_book</mat-icon>
+                CATÁLOGO
+              </a>
+
+              <a href="#clients" class="w3-bar-item w3-btn" title="Nossos clientes">
+                <mat-icon>groups</mat-icon>
+                CLIENTES
+              </a>
+
+              <a href="#login" class="w3-bar-item w3-btn" title="Acesso Administrativo">
+                <mat-icon>account_circle</mat-icon>
+            </a>
+      </div>
+
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-medium w3-hide-large"
+      (click)="mySidebar.style.display === 'block' ? mySidebar.style.display = 'none' : mySidebar.style.display = 'block'">
+      <mat-icon inline=true>menu</mat-icon>
+    </a>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-indigo w3-card w3-animate-left w3-hide-large" style="display:none" #mySidebar>
+    <a href="javascript:void(0)" (click)="mySidebar.style.display = 'none'" class="w3-bar-item w3-button w3-large w3-padding-16" matTooltip="Fechar menu">
+        <mat-icon>cancel</mat-icon>
+        Ocultar
+    </a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">
+        <mat-icon>engineering</mat-icon>
+        INSTITUCIONAL
+    </a>
+    <a href="#catalog" onclick="w3_close()" class="w3-bar-item w3-button">
+        <mat-icon>menu_book</mat-icon>
+        CATÁLOGO
+    </a>
+    <a href="#clients" onclick="w3_close()" class="w3-bar-item w3-button">
+        <mat-icon>groups</mat-icon>
+        CLIENTES
+    </a>
+  </nav>
+</div>
