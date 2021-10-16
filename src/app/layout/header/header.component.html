@@ -32,7 +32,7 @@
       </div>
 
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hide-medium w3-hide-large"
+    <a href="javascript:void(0)" class="w3-bar-item w3-btn w3-hide-medium w3-hide-large"
       (click)="mySidebar.style.display === 'block' ? mySidebar.style.display = 'none' : mySidebar.style.display = 'block'">
       <mat-icon inline=true>menu</mat-icon>
     </a>
@@ -40,19 +40,18 @@
 
   <!-- Sidebar on small screens when clicking the menu icon -->
   <nav class="w3-sidebar w3-bar-block w3-indigo w3-card w3-animate-left w3-hide-large" style="display:none" #mySidebar>
-    <a href="javascript:void(0)" (click)="mySidebar.style.display = 'none'" class="w3-bar-item w3-button w3-large w3-padding-16" matTooltip="Fechar menu">
+    <a href="javascript:void(0)" (click)="mySidebar.style.display = 'none'" class="w3-bar-item w3-btn" title="Ocultar o menu">
         <mat-icon>cancel</mat-icon>
-        Ocultar
     </a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-btn" title="Institucional">
         <mat-icon>engineering</mat-icon>
         INSTITUCIONAL
     </a>
-    <a href="#catalog" onclick="w3_close()" class="w3-bar-item w3-button">
+    <a href="#catalog" onclick="w3_close()" class="w3-bar-item w3-btn" title="Catálogo">
         <mat-icon>menu_book</mat-icon>
         CATÁLOGO
     </a>
-    <a href="#clients" onclick="w3_close()" class="w3-bar-item w3-button">
+    <a href="#clients" onclick="w3_close()" class="w3-bar-item w3-btn" title="Nossos clientes">
         <mat-icon>groups</mat-icon>
         CLIENTES
     </a>
